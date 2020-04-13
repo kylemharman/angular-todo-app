@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row top-buffer">
+    <div class="col-sm-12">
+      <app-add-todo (addTodo)="addTodo($event)"></app-add-todo>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <ul class="list-group list-group-flush">
+        <app-todo-item
+          *ngFor="let todo of todos"
+          [todo]="todo"
+          class="list-group-item"
+          (deleteTodo)="deleteTodo($event)"
+        ></app-todo-item>
+      </ul>
+    </div>
+  </div>
+</div>

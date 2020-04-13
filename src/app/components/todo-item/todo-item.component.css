@@ -1,0 +1,12 @@
+p {
+  margin: 0;
+  margin-left: 15px;
+}
+
+.btn-danger {
+  align-self: flex-end;
+}
+
+.is-complete {
+  text-decoration: line-through;
+}

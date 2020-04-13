@@ -1,0 +1,12 @@
+<div class="d-flex align-items-center">
+  <input (change)="onToggle(todo)" type="checkbox" [checked]="todo.completed" />
+  <p [ngClass]="setClass()">
+    {{ todo.title }}
+  </p>
+  <button
+    (click)="onDelete(todo)"
+    class="btn btn-outline-danger btn-sm ml-auto"
+  >
+    Remove
+  </button>
+</div>
